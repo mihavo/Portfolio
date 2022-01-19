@@ -9,7 +9,7 @@ const Navbar = () => {
 			justifyContent={'flex-end'}
 			alignItems={'center'}
 			w={'100%'}
-			h={'8vh'}
+			h={'10vh'}
 			borderBottom={'2px solid #262C4D'}
 			pr={'30px'}>
 			<Flex alignItems={'center'} gap={6}>
