@@ -108,11 +108,14 @@ const ContactForm = () => {
 						<Field name='name'>
 							{({ field, form }) => (
 								<FormControl isInvalid={form.errors.name && form.touched.name} mt={'20px'}>
-									<FormLabel htmlFor='name'>Name</FormLabel>
+									<FormLabel color={'secondary'} htmlFor='name'>
+										Name
+									</FormLabel>
 									<Input
 										{...field}
 										type='text'
 										id='name'
+										color={'purple.300'}
 										placeholder='Your Full Name'
 										bgColor={'primary'}
 									/>
@@ -123,11 +126,14 @@ const ContactForm = () => {
 						<Field name='email'>
 							{({ field, form }) => (
 								<FormControl isInvalid={form.errors.email && form.touched.email} mt={'20px'}>
-									<FormLabel htmlFor='email'>Email Address</FormLabel>
+									<FormLabel color={'secondary'} htmlFor='email'>
+										Email Address
+									</FormLabel>
 									<Input
 										{...field}
 										type='text'
 										id='email'
+										color={'purple.300'}
 										placeholder='Your Email Address'
 										bgColor={'primary'}
 										focusBorderColor={'blue.500'}
@@ -141,9 +147,12 @@ const ContactForm = () => {
 								<FormControl
 									isInvalid={form.errors.subject && form.touched.subject}
 									mt={'20px'}>
-									<FormLabel htmlFor='subject'>Subject</FormLabel>
+									<FormLabel color={'secondary'} htmlFor='subject'>
+										Subject
+									</FormLabel>
 									<Input
 										{...field}
+										color={'purple.300'}
 										type='subject'
 										id='subject'
 										placeholder='Subject'
@@ -156,14 +165,22 @@ const ContactForm = () => {
 						<Field name='body'>
 							{({ field, form }) => (
 								<FormControl isInvalid={form.errors.body && form.touched.body} mt={'20px'}>
-									<FormLabel htmlFor='body'>Message</FormLabel>
-									<Textarea {...field} type='body' id='body' bgColor={'blue.800'} />
+									<FormLabel color={'secondary'} htmlFor='body'>
+										Message
+									</FormLabel>
+									<Textarea
+										{...field}
+										color={'purple.300'}
+										type='body'
+										id='body'
+										bgColor={'blue.800'}
+									/>
 									<FormErrorMessage>{form.errors.body}</FormErrorMessage>
 								</FormControl>
 							)}
 						</Field>
 
-						<Flex mt={'40px'} justifyContent={'end'} mb={'20px'}>
+						<Flex mt={'40px'} justifyContent={'flex-end'} mb={'20px'}>
 							<Button
 								size='lg'
 								bgColor={'green.700'}

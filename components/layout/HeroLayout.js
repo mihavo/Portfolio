@@ -29,8 +29,12 @@ const HeroLayout = () => {
 			id={'home'}
 			textAlign={['center', 'center', 'center', 'start']}>
 			<Navbar />
-
-			<Flex justifyContent={['start', 'center', 'center', 'end']} my={'10vh'} mx={'5vh'} h={'100%'}>
+			<Flex
+				css={{ '-webkit-justify-content': 'flex-end' }}
+				justifyContent={['start', 'center', 'center', 'flex-end']}
+				my={'10vh'}
+				mx={'5vh'}
+				h={'100%'}>
 				<Flex flexDir={'column'} h={'100%'} w={['100vw', '100vw', '45vw']}>
 					<Flex flexDir={'column'} justifyContent={'space-between'}>
 						<Flex flexDir={'column'}>
