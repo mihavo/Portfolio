@@ -8,7 +8,7 @@
         },
         {
             "title": "WorkNet",
-            "description": "A full stack web app, buitl using the MERN stack, designed to provide a business-oriented social-networking experience",
+            "description": "A full stack web app, built using the MERN stack, designed to provide a business-oriented social-networking experience",
             "github": "https://github.com/Michael-Vol/WorkNet",
             "website": "https://michaelvol-worknet.herokuapp.com/"
         },
@@ -36,7 +36,7 @@
         },
         {
             "title": "Vaccine Monitor",
-            "description": "A simple Command Line Tool that implements monitor processes tracking and transfering vacccination data by using POSIX threads and UNIX sockets",
+            "description": "A simple Command Line Tool that implements monitor processes tracking and transferring vacccination data by using POSIX threads and UNIX sockets",
             "github": "https://github.com/Michael-Vol/VaccineMonitor"
         },
         {

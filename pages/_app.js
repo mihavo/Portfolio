@@ -1,5 +1,7 @@
 import { ChakraProvider, extendTheme, theme as base } from '@chakra-ui/react';
+
 import '../styles/globals.css';
+
 const theme = extendTheme({
 	fonts: {
 		body: `Manrope, ${base.fonts.body}`,
@@ -28,18 +30,13 @@ const theme = extendTheme({
 		secondary: '#04E8B9',
 	},
 	components: {
-		Text: {
-			baseStyle: {
-				color: 'secondary',
-			},
-		},
 		Heading: {
 			baseStyle: {
 				color: 'secondary',
 			},
 			variants: {
 				base: {
-					fontSize: '60px',
+					fontSize: ['36px', '38px', '48px'],
 				},
 			},
 			defaultProps: {
@@ -47,9 +44,14 @@ const theme = extendTheme({
 			},
 		},
 		Text: {
-			baseStyle: {
-				fontSize: '22px',
-				color: 'blue.500',
+			variants: {
+				base: {
+					fontSize: ['16px', '18px', '20px'],
+					color: 'blue.500',
+				},
+			},
+			defaultProps: {
+				variant: 'base',
 			},
 		},
 		Link: {
@@ -79,6 +81,7 @@ const theme = extendTheme({
 					border: '0',
 					bgColor: 'secondary',
 					color: 'white',
+					fontSize: ['16px', '18px', '20px'],
 				},
 			},
 			defaultProps: {

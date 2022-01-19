@@ -5,11 +5,16 @@ import projects from '../../data/projects/projects.json';
 
 const ProjectsLayout = () => {
 	return (
-		<Flex flexDir={'column'} h={'100vh'} id={'projects'}>
-			<Flex flexDir={'column'} mx={'15vw'} my={'5vh'} h={'100%'}>
+		<Flex
+			flexDir={'column'}
+			id={'projects'}
+			textAlign={['center', 'start']}
+			mt={['20vh', '10vh', '0vh']}
+			p={['0px 0px 0px 20px', '20px', '75px', '100px']}>
+			<Flex flexDir={'column'} h={'100%'}>
 				<Heading>Projects</Heading>
-				<Flex flexDir={'column'} gap={'5vh'}>
-					<Flex flexDir={'column'} h={'100%'} gap={2}>
+				<Flex gap={'5vh'} flexDir={'column'}>
+					<Flex flexDir={'column'} gap={2}>
 						<Text my={'15px'} fontSize={'28px'} fontWeight={'500'} color={'secondary'}>
 							Personal Projects
 						</Text>

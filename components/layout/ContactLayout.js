@@ -17,10 +17,19 @@ const ContactLayout = () => {
 		},
 	};
 	return (
-		<Flex flexDir={'column'} h={'100vh'} id={'contact'}>
-			<Flex flexDir={'column'} mx={'15vw'} my={'5vh'} h={'100%'}>
+		<Flex
+			flexDir={'column'}
+			id={'contact'}
+			textAlign={['center', 'center', 'start']}
+			mt={['20vh', '10vh', '0vh']}
+			p={['0px 0px 0px 10px', '20px', '75px', '100px']}>
+			<Flex
+				flexDir={'column'}
+				my={'5vh'}
+				h={'100%'}
+				alignItems={['center', 'center', 'center', 'start']}>
 				<Heading>Get in Touch</Heading>
-				<Flex mt={'30px'} ml={'20px'} gap={'30px'}>
+				<Flex mt={'30px'} gap={'30px'}>
 					<Link {...linkProps} href={'https://www.facebook.com/michael.volakis'}>
 						<BsFacebook {...iconProps} />
 					</Link>
@@ -40,7 +49,7 @@ const ContactLayout = () => {
 						<MdAlternateEmail {...iconProps} />
 					</Link>
 				</Flex>
-				<Text color={'purple.300'} my={'5vh'} maxW={'35vw'} fontSize={'20px'} fontWeight={'500'}>
+				<Text color={'purple.300'} my={'5vh'} maxW={['90vw', '90vw', '35vw']} fontWeight={'500'}>
 					If you have any questions,proposals or comments, feel free to contact me bellow. I'd love
 					to hear from you!
 				</Text>

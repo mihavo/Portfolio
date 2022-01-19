@@ -84,7 +84,13 @@ const ContactForm = () => {
 	}, []);
 
 	return (
-		<Flex flexDir={'column'} bgColor={'blue.700'} p={'20px'} rounded={'md'} color={'white'} w={'35vw'}>
+		<Flex
+			flexDir={'column'}
+			bgColor={'blue.700'}
+			p={'20px'}
+			rounded={'md'}
+			color={'white'}
+			w={['80vw', '60vw', '35vw']}>
 			<Formik
 				initialValues={{
 					name: '',
@@ -124,6 +130,7 @@ const ContactForm = () => {
 										id='email'
 										placeholder='Your Email Address'
 										bgColor={'primary'}
+										focusBorderColor={'blue.500'}
 									/>
 									<FormErrorMessage>{form.errors.email}</FormErrorMessage>
 								</FormControl>
@@ -140,7 +147,7 @@ const ContactForm = () => {
 										type='subject'
 										id='subject'
 										placeholder='Subject'
-										bgColor={'primary'}
+										bgColor={'blue.800'}
 									/>
 									<FormErrorMessage>{form.errors.subject}</FormErrorMessage>
 								</FormControl>
@@ -150,7 +157,7 @@ const ContactForm = () => {
 							{({ field, form }) => (
 								<FormControl isInvalid={form.errors.body && form.touched.body} mt={'20px'}>
 									<FormLabel htmlFor='body'>Message</FormLabel>
-									<Textarea {...field} type='body' id='body' bgColor={'primary'} />
+									<Textarea {...field} type='body' id='body' bgColor={'blue.800'} />
 									<FormErrorMessage>{form.errors.body}</FormErrorMessage>
 								</FormControl>
 							)}

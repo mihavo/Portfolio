@@ -11,8 +11,13 @@ const ProjectCard = ({ title, description, github, website }) => {
 		<Flex
 			flexDir={'column'}
 			boxShadow={'lg'}
-			minW={'16vw'}
-			w={'17vw'}
+			minW={['70vw', '50vw', '30vw', '25vw', '20vw']}
+			maxW={'20vw'}
+			h={['35vh', '30vh']}
+			// h={[]}
+			// h={['50%', '75%', '100%']}
+			// w={['100%', '80', '100%']}
+			overflow={'scroll'}
 			transition={'all 0.3s ease-in-out'}
 			_hover={{
 				boxShadow: '2xl',
@@ -35,7 +40,7 @@ const ProjectCard = ({ title, description, github, website }) => {
 				)}
 			</Flex>
 			<Flex flexDir={'column'} mt={'25px'}>
-				<Text my={'10px'} fontSize={'24px'} fontWeight={'600'}>
+				<Text my={'10px'} fontWeight={'600'}>
 					{title}
 				</Text>
 				<Text fontSize={'16px'}>{description}</Text>

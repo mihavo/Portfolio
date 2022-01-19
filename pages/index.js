@@ -6,19 +6,13 @@ import AboutLayout from '../components/layout/AboutLayout';
 import ProjectsLayout from '../components/layout/ProjectsLayout';
 import ContactLayout from '../components/layout/ContactLayout';
 
-export default () => {
+export default function Portfolio() {
 	return (
-		<Flex
-			bgColor={'primary'}
-			bgImage={'/vectors/background.svg'}
-			h={'100%'}
-			bgRepeat={'no-repeat'}
-			flexDir={'column'}>
-			<Navbar />
+		<Flex bgColor={'primary'} h={'100%'} flexDir={'column'}>
 			<HeroLayout />
 			<AboutLayout />
 			<ProjectsLayout />
 			<ContactLayout />
 		</Flex>
 	);
-};
+}
