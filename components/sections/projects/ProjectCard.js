@@ -17,7 +17,7 @@ const ProjectCard = ({ title, description, github, website }) => {
 			// h={[]}
 			// h={['50%', '75%', '100%']}
 			// w={['100%', '80', '100%']}
-			overflow={'scroll'}
+			overflow={'hidden'}
 			transition={'all 0.3s ease-in-out'}
 			_hover={{
 				boxShadow: '2xl',
