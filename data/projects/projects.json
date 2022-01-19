@@ -1,0 +1,54 @@
+{
+    "personal": [
+        {
+            "title": "Atlacity",
+            "description": "A Foursquare inspired full stack web app that lets users explore new places, add ratings, create city guides, connect with other people and many more!",
+            "github": "https://github.com/Michael-Vol/Atlacity",
+            "website": "https://atlacity.vercel.app/"
+        },
+        {
+            "title": "WorkNet",
+            "description": "A full stack web app, buitl using the MERN stack, designed to provide a business-oriented social-networking experience",
+            "github": "https://github.com/Michael-Vol/WorkNet",
+            "website": "https://michaelvol-worknet.herokuapp.com/"
+        },
+        {
+            "title": "Personal Portfolio",
+            "description": "My personal portfolio website built using React and Next.js",
+            "github": "https://github.com/Michael-Vol/Portfolio"
+        },
+        {
+            "title": "DevConnector",
+            "description": "A LinkedIn-inspired Web App based on Bard Traversy's MERN Course.",
+            "github": "https://github.com/Michael-Vol/DevConnector"
+        },
+        {
+            "title": "Weather App",
+            "description": "A simple weather app that uses the MetaWeather API to display the current weather in a given location",
+            "github": "https://github.com/Michael-Vol/WeatherApp"
+        }
+    ],
+    "uni": [
+        {
+            "title": "Inverted Search Engine Optimizer",
+            "description": "A Keyword Matching and Deduplication Utility for Inverted Search Engines",
+            "github": "https://github.com/Michael-Vol/Inverted-Search-Engine-Optimizer"
+        },
+        {
+            "title": "Vaccine Monitor",
+            "description": "A simple Command Line Tool that implements monitor processes tracking and transfering vacccination data by using POSIX threads and UNIX sockets",
+            "github": "https://github.com/Michael-Vol/VaccineMonitor"
+        },
+        {
+            "title": "Doatap",
+            "description": "A better implementation of the doatap.gr website, focusing on refining the user experience and improving the UX",
+            "github": "https://github.com/Michael-Vol/DOATAP",
+            "website": "https://doatap-c5e39.web.app"
+        },
+        {
+            "title": "Browser Emulator",
+            "description": "A browser emulator written in C that simulates the functionality of a Web Browser using linked lists",
+            "github": "https://github.com/Michael-Vol/Browser-Emulator"
+        }
+    ]
+}
