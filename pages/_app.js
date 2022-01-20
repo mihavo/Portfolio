@@ -1,4 +1,5 @@
 import { ChakraProvider, extendTheme, theme as base } from '@chakra-ui/react';
+import Script from 'next/script';
 
 import '../styles/globals.css';
 
@@ -94,6 +95,20 @@ const theme = extendTheme({
 const PortfolioApp = ({ Component, pageProps }) => {
 	return (
 		<div className='app'>
+			<Script
+				src='https://www.googletagmanager.com/gtag/js?id=G-3M45E1NNH5'
+				strategy='afterInteractive'
+			/>
+			<Script id='google-analytics' strategy='afterInteractive'>
+				{`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+		  gtag('config', 'G-3M45E1NNH5');
+        `}
+			</Script>
+
 			<ChakraProvider theme={theme}>
 				<Component {...pageProps} />
 			</ChakraProvider>
