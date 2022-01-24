@@ -46,6 +46,21 @@
             "website": "https://doatap-c5e39.web.app"
         },
         {
+            "title": "ML-Vaccine-Sentiment-Classifier",
+            "description": "A Vaccine Sentiment Classifier with Deep Learning for NLP",
+            "github": "https://github.com/Michael-Vol/ML-Vaccine-Sentiment-Classifier"
+        },
+        {
+            "title": "DB-Blocks-Manager",
+            "description": "A Database Blocks Manager written in C",
+            "github": "https://github.com/Michael-Vol/DB-Blocks-Manager"
+        },
+        {
+            "title": "MiniJava-LLVM-Generator",
+            "description": "A Java utility that transpiles code from MiniJava to LLVM",
+            "github": "https://github.com/Michael-Vol/MiniJava-LLVM-Generator"
+        },
+        {
             "title": "Browser Emulator",
             "description": "A browser emulator written in C that simulates the functionality of a Web Browser using linked lists",
             "github": "https://github.com/Michael-Vol/Browser-Emulator"
