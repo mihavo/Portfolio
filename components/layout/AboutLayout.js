@@ -43,21 +43,21 @@ const AboutLayout = () => {
       >
         <Flex flexDir={'column'} id="about-text">
           <Text mt={'4vh'} color={'purple.300'}>
-            Hello there! My name is Michael and I am a Computer Science Student
-            at{' '}
+            Hello there! My name is Michael. I studied Computer Science at{' '}
             <Link
               color={'secondary'}
+              fontSize={'1.2rem'}
               href={'https://di.uoa.gr'}
               target={'_blank'}
             >
-              DIT, University of Athens, Greece.
-            </Link>{' '}
-            I'm interested in exploring new ways to build web applications. My
-            Journey in web development began in 2018 when I started
-            experimenting with the interfaces of simple webpages using HTML, CSS
-            & JS and getting familiar with the way server-side code worked. That
-            inspired me to learn more about the JavaScript ecosystem and the
-            frameworks that surround it.
+              DIT, University of Athens
+            </Link>
+            , Greece. I'm interested in exploring new ways to build web
+            applications. My journey in web development began in 2018 when I
+            started experimenting with the interfaces of simple webpages using
+            HTML, CSS & JS and getting familiar with the way server-side code
+            worked. That inspired me to learn more about the JavaScript
+            ecosystem and the frameworks that surround it.
             <br />
             <br />
             Since then I have been working on various projects and building web
