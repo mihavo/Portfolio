@@ -84,118 +84,131 @@ const ContactForm = () => {
 	}, []);
 
 	return (
-		<Flex
-			flexDir={'column'}
-			bgColor={'blue.700'}
-			p={'20px'}
-			rounded={'md'}
-			color={'white'}
-			w={['80vw', '60vw', '35vw']}>
-			<Formik
-				initialValues={{
-					name: '',
-					email: '',
-					subject: '',
-					body: '',
-				}}
-				validate={handleValidation}
-				onSubmit={(values, { setSubmitting }) => {
-					setSubmitting(true);
-					handleSubmit(values);
-				}}>
-				{(props) => (
-					<Form>
-						<Field name='name'>
-							{({ field, form }) => (
-								<FormControl isInvalid={form.errors.name && form.touched.name} mt={'20px'}>
-									<FormLabel color={'secondary'} htmlFor='name'>
-										Name
-									</FormLabel>
-									<Input
-										{...field}
-										type='text'
-										id='name'
-										color={'purple.300'}
-										placeholder='Your Full Name'
-										bgColor={'primary'}
-									/>
-									<FormErrorMessage>{form.errors.name}</FormErrorMessage>
-								</FormControl>
-							)}
-						</Field>
-						<Field name='email'>
-							{({ field, form }) => (
-								<FormControl isInvalid={form.errors.email && form.touched.email} mt={'20px'}>
-									<FormLabel color={'secondary'} htmlFor='email'>
-										Email Address
-									</FormLabel>
-									<Input
-										{...field}
-										type='text'
-										id='email'
-										color={'purple.300'}
-										placeholder='Your Email Address'
-										bgColor={'primary'}
-										focusBorderColor={'blue.500'}
-									/>
-									<FormErrorMessage>{form.errors.email}</FormErrorMessage>
-								</FormControl>
-							)}
-						</Field>
-						<Field name='subject'>
-							{({ field, form }) => (
-								<FormControl
-									isInvalid={form.errors.subject && form.touched.subject}
-									mt={'20px'}>
-									<FormLabel color={'secondary'} htmlFor='subject'>
-										Subject
-									</FormLabel>
-									<Input
-										{...field}
-										color={'purple.300'}
-										type='subject'
-										id='subject'
-										placeholder='Subject'
-										bgColor={'blue.800'}
-									/>
-									<FormErrorMessage>{form.errors.subject}</FormErrorMessage>
-								</FormControl>
-							)}
-						</Field>
-						<Field name='body'>
-							{({ field, form }) => (
-								<FormControl isInvalid={form.errors.body && form.touched.body} mt={'20px'}>
-									<FormLabel color={'secondary'} htmlFor='body'>
-										Message
-									</FormLabel>
-									<Textarea
-										{...field}
-										color={'purple.300'}
-										type='body'
-										id='body'
-										bgColor={'blue.800'}
-									/>
-									<FormErrorMessage>{form.errors.body}</FormErrorMessage>
-								</FormControl>
-							)}
-						</Field>
+    <Flex
+      flexDir={'column'}
+      bgColor={'#1f264d'}
+      p={'20px'}
+      rounded={'md'}
+      color={'white'}
+      w={['80vw', '60vw', '35vw']}
+    >
+      <Formik
+        initialValues={{
+          name: '',
+          email: '',
+          subject: '',
+          body: '',
+        }}
+        validate={handleValidation}
+        onSubmit={(values, { setSubmitting }) => {
+          setSubmitting(true);
+          handleSubmit(values);
+        }}
+      >
+        {(props) => (
+          <Form>
+            <Field name="name">
+              {({ field, form }) => (
+                <FormControl
+                  isInvalid={form.errors.name && form.touched.name}
+                  mt={'20px'}
+                >
+                  <FormLabel color={'secondary'} htmlFor="name">
+                    Name
+                  </FormLabel>
+                  <Input
+                    {...field}
+                    type="text"
+                    id="name"
+                    color={'purple.300'}
+                    placeholder="Your Full Name"
+                    bgColor={'primary'}
+                  />
+                  <FormErrorMessage>{form.errors.name}</FormErrorMessage>
+                </FormControl>
+              )}
+            </Field>
+            <Field name="email">
+              {({ field, form }) => (
+                <FormControl
+                  isInvalid={form.errors.email && form.touched.email}
+                  mt={'20px'}
+                >
+                  <FormLabel color={'secondary'} htmlFor="email">
+                    Email Address
+                  </FormLabel>
+                  <Input
+                    {...field}
+                    type="text"
+                    id="email"
+                    color={'purple.300'}
+                    placeholder="Your Email Address"
+                    bgColor={'primary'}
+                    focusBorderColor={'blue.500'}
+                  />
+                  <FormErrorMessage>{form.errors.email}</FormErrorMessage>
+                </FormControl>
+              )}
+            </Field>
+            <Field name="subject">
+              {({ field, form }) => (
+                <FormControl
+                  isInvalid={form.errors.subject && form.touched.subject}
+                  mt={'20px'}
+                >
+                  <FormLabel color={'secondary'} htmlFor="subject">
+                    Subject
+                  </FormLabel>
+                  <Input
+                    {...field}
+                    color={'purple.300'}
+                    type="subject"
+                    id="subject"
+                    placeholder="Subject"
+                    bgColor={'blue.800'}
+                  />
+                  <FormErrorMessage>{form.errors.subject}</FormErrorMessage>
+                </FormControl>
+              )}
+            </Field>
+            <Field name="body">
+              {({ field, form }) => (
+                <FormControl
+                  isInvalid={form.errors.body && form.touched.body}
+                  mt={'20px'}
+                >
+                  <FormLabel color={'secondary'} htmlFor="body">
+                    Message
+                  </FormLabel>
+                  <Textarea
+                    {...field}
+                    color={'purple.300'}
+                    type="body"
+                    id="body"
+                    bgColor={'blue.800'}
+                  />
+                  <FormErrorMessage>{form.errors.body}</FormErrorMessage>
+                </FormControl>
+              )}
+            </Field>
 
-						<Flex mt={'40px'} justifyContent={'flex-end'} mb={'20px'}>
-							<Button
-								size='lg'
-								bgColor={'green.700'}
-								color={'blue.900'}
-								isLoading={formSent}
-								type='submit'
-								_hover={{ color: 'primary', bgColor: 'secondary' }}>
-								Submit
-							</Button>
-						</Flex>
-					</Form>
-				)}
-			</Formik>
-		</Flex>
-	);
+            <Flex mt={'40px'} justifyContent={'flex-end'} mb={'20px'}>
+              <Button
+                size="lg"
+                bgColor={'secondary'}
+                color={'blue.900'}
+                isLoading={formSent}
+                type="submit"
+                _hover={{ color: 'primary', bgColor: 'green.500' }}
+              >
+                Submit
+              </Button>
+            </Flex>
+          </Form>
+        )}
+      </Formik>
+    </Flex>
+  );
 };
 
 export default ContactForm;
