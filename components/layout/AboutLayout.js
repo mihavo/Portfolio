@@ -26,18 +26,22 @@ const buttonProps = {
 };
 const AboutLayout = () => {
   return (
-    <Flex flexDir={'row'} id="about-wrapper">
+    <Flex
+      flexDir={'column'}
+      id="about-wrapper"
+      textAlign={['center', 'start']}
+      p={['25px', '50px', '75px', '100px']}
+    >
+      <Heading>About Me</Heading>
       <Flex
         flexDir={'column'}
-        h={'100vh'}
+        h={'80vh'}
         id={'about-text-wrapper'}
-        textAlign={['center', 'start']}
+        alignItems={'center'}
         maxW={['100%', '100%', '100%', '60%']}
-        mt={['20vh', '10vh', '0vh']}
-        p={['25px', '50px', '75px', '100px']}
+        mt={['0vh', '0vh', '0vh']}
       >
         <Flex flexDir={'column'} id="about-text">
-          <Heading>About Me</Heading>
           <Text mt={'4vh'} color={'purple.300'}>
             Hello there! My name is Michael and I am a Computer Science Student
             at{' '}
@@ -81,19 +85,6 @@ const AboutLayout = () => {
             </Link>
           </Flex>
         </Flex>
-      </Flex>
-      <Flex
-        id="about-image-wrapper"
-        alignItems={'center'}
-        mx={'15vh'}
-        mb={'20vh'}
-      >
-        <Avatar
-          src="/img/profile.jpeg"
-          alt="profile-photo"
-          borderRadius={'full'}
-          boxSize={'20vw'}
-        />
       </Flex>
     </Flex>
   );
