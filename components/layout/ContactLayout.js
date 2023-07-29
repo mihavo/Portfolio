@@ -26,6 +26,7 @@ const ContactLayout = () => {
     <Flex
       flexDir={'column'}
       id={'contact'}
+      alignItems={'center'}
       textAlign={['center', 'center', 'start']}
       mt={['20vh', '10vh', '0vh']}
       p={['0px 0px 0px 10px', '20px', '75px', '100px']}

@@ -26,10 +26,11 @@ const ProjectsLayout = () => {
       id={'projects'}
       textAlign={['center', 'start']}
       mt={['20vh', '10vh', '0vh']}
+      ml={['25px', '50px', '75px', '100px']}
       p={['0px 0px 0px 20px', '20px', '75px', '100px']}
     >
       <Flex flexDir={'column'} h={'100%'}>
-        <Heading>Projects</Heading>
+        <Heading mb={'1vw'}>Projects</Heading>
         <Flex gap={'4vh'} flexDir={'column'}>
           <Flex
             {...cardWrapperProperties}
