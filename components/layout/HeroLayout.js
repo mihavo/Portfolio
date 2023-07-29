@@ -25,7 +25,7 @@ const HeroLayout = () => {
       bgRepeat={'no-repeat'}
       flexDir={'column'}
       w={'100%'}
-      h={'100vh'}
+      h={['100%', '100%', '100vh']}
       id={'home'}
       textAlign={['center', 'center', 'center', 'start']}
     >

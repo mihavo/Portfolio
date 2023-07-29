@@ -28,6 +28,7 @@ const AboutLayout = () => {
   return (
     <Flex
       flexDir={'column'}
+      h={'100vh'}
       id="about-wrapper"
       textAlign={['center', 'start']}
       p={['25px', '50px', '75px', '100px']}
@@ -35,7 +36,6 @@ const AboutLayout = () => {
       <Heading>About Me</Heading>
       <Flex
         flexDir={'column'}
-        h={'80vh'}
         id={'about-text-wrapper'}
         alignItems={'center'}
         maxW={['100%', '100%', '100%', '60%']}
