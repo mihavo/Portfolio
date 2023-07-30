@@ -6,6 +6,7 @@ import AboutLayout from '../components/layout/AboutLayout';
 import ProjectsLayout from '../components/layout/ProjectsLayout';
 import ContactLayout from '../components/layout/ContactLayout';
 import Separator from '../components/ui/Separator';
+import ExperienceLayout from '../components/layout/ExperienceLayout';
 
 export default function Portfolio() {
   return (
@@ -13,6 +14,8 @@ export default function Portfolio() {
       <HeroLayout />
       <Separator />
       <AboutLayout />
+      <Separator />
+      <ExperienceLayout />
       <Separator />
       <ProjectsLayout />
       <Separator />

@@ -54,7 +54,7 @@ const AboutLayout = () => {
     <Flex
       flexDir={'column'}
       h={'100vh'}
-      id="about-wrapper"
+      id="about"
       textAlign={['center', 'start']}
       ml={['25px', '50px', '75px', '100px']}
       p={['25px', '50px', '75px', '100px']}
