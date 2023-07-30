@@ -150,7 +150,7 @@ const AboutLayout = () => {
               />
               <TechnologyItem
                 name={'Linux & Bash'}
-                icon={<VscTerminalBash size={'34px'} />}
+                icon={<VscTerminalBash size={'28px'} />}
               />
               <TechnologyItem
                 name={'Docker'}
