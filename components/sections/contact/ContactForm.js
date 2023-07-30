@@ -77,7 +77,7 @@ const ContactForm = () => {
 
 	useEffect(() => {
 		try {
-			emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_USER_ID);
+			emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY);
 		} catch (error) {
 			console.log(error);
 		}

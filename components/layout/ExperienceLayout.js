@@ -30,6 +30,7 @@ const ExperienceLayout = () => {
               time_range={time_range.toUpperCase()}
               title={title}
               link={link}
+              key={title}
             />
           );
         })}
