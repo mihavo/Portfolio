@@ -1,6 +1,11 @@
 {
     "personal": [
         {
+            "title": "Ecommerce API",
+            "description": "An Ecommerce API for handling the back-end logic of an e-shop. Provides support for user accounts, cart management, product handling, transactions and many more",
+            "github": "https://github.com/Michael-Vol/ecommerce-api"
+        },
+        {
             "title": "Atlacity",
             "description": "A Foursquare inspired full stack web app that lets users explore new places, add ratings, create city guides, connect with other people and many more!",
             "github": "https://github.com/Michael-Vol/Atlacity",
