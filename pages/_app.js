@@ -2,6 +2,7 @@ import { ChakraProvider, extendTheme, theme as base } from '@chakra-ui/react';
 import Script from 'next/script';
 
 import '../styles/globals.css';
+import Head from 'next/head';
 
 const theme = extendTheme({
   fonts: {
@@ -93,27 +94,30 @@ const theme = extendTheme({
 });
 
 const PortfolioApp = ({ Component, pageProps }) => {
-	return (
-		<div className='app'>
-			<Script
-				src='https://www.googletagmanager.com/gtag/js?id=G-3M45E1NNH5'
-				strategy='afterInteractive'
-			/>
-			<Script id='google-analytics' strategy='afterInteractive'>
-				{`
+  return (
+    <div className="app">
+      <Head>
+        <title>Michael Volakis</title>
+      </Head>
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-3M45E1NNH5"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){window.dataLayer.push(arguments);}
           gtag('js', new Date());
 
 		  gtag('config', 'G-3M45E1NNH5');
         `}
-			</Script>
+      </Script>
 
-			<ChakraProvider theme={theme}>
-				<Component {...pageProps} />
-			</ChakraProvider>
-		</div>
-	);
+      <ChakraProvider theme={theme}>
+        <Component {...pageProps} />
+      </ChakraProvider>
+    </div>
+  );
 };
 
 export default PortfolioApp;
