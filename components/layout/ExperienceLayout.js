@@ -1,6 +1,6 @@
-import { Flex, Heading, Text } from '@chakra-ui/react';
-import ExperienceCard from '../sections/experience/ExperienceCard';
+import { Flex, Heading } from '@chakra-ui/react';
 import experience from '../../data/experience/experience.json';
+import ExperienceCard from '../sections/experience/ExperienceCard';
 const ExperienceLayout = () => {
   return (
     <Flex
@@ -23,7 +23,7 @@ const ExperienceLayout = () => {
         overflow={'scroll'}
         id="experience-wrapper"
       >
-        {experience.map(({ description, time_range, title, link }) => {
+        {experience.reverse().map(({ description, time_range, title, link }) => {
           return (
             <ExperienceCard
               description={description}

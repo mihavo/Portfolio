@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import { Flex, Text, Heading, Box, Container } from '@chakra-ui/react';
-import ProjectCard from '../sections/projects/ProjectCard';
-import projects from '../../data/projects/projects.json';
+import { Flex, Heading, Text } from '@chakra-ui/react';
+import React from 'react';
 import ScrollContainer from 'react-indiana-drag-scroll';
+import projects from '../../data/projects/projects.json';
+import ProjectCard from '../sections/projects/ProjectCard';
 const cardWrapperProperties = {
   flexDir: 'column',
   h: '100%',
