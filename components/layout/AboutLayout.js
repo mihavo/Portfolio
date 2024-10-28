@@ -1,19 +1,13 @@
-import React from 'react';
 import {
-  Flex,
-  Text,
-  Heading,
-  Link,
   Button,
-  ButtonGroup,
-  Image,
-  Avatar,
+  Flex,
   Grid,
-  GridItem,
+  Heading,
+  Image,
+  Link,
+  Text
 } from '@chakra-ui/react';
-import { BsGithub } from 'react-icons/bs';
-import { IoMdDocument } from 'react-icons/io';
-import TechnologyItem from '../sections/about/TechnologyItem';
+import React from 'react';
 import {
   BiLogoCss3,
   BiLogoHtml5,
@@ -22,21 +16,22 @@ import {
   BiLogoNodejs,
   BiLogoReact,
 } from 'react-icons/bi';
+import { BsGithub } from 'react-icons/bs';
+import { IoMdDocument } from 'react-icons/io';
+import { LuFileJson2 } from 'react-icons/lu';
 import {
   SiApachemaven,
   SiDocker,
   SiExpress,
-  SiGnubash,
-  SiJson,
   SiMongodb,
   SiMysql,
   SiNextdotjs,
   SiNpm,
   SiPython,
-  SiSpring,
+  SiSpring
 } from 'react-icons/si';
 import { VscTerminalBash } from 'react-icons/vsc';
-import { LuFile, LuFileJson2 } from 'react-icons/lu';
+import TechnologyItem from '../sections/about/TechnologyItem';
 const buttonProps = {
   size: 'lg',
   borderColor: 'green.700',
@@ -52,21 +47,21 @@ const buttonProps = {
 const AboutLayout = () => {
   return (
     <Flex
-      flexDir={'column'}
+      flexDir={'row'}
       h={'100vh'}
       id="about"
       textAlign={['center', 'start']}
+      justifyContent={'center'}
       ml={['25px', '50px', '75px', '100px']}
       p={['25px', '50px', '75px', '100px']}
     >
-      <Heading>About Me</Heading>
       <Flex
         flexDir={'column'}
         id={'about-text-wrapper'}
-        alignItems={'center'}
         maxW={['100%', '100%', '100%', '60%']}
         mt={['0vh', '0vh', '0vh']}
       >
+      <Heading>About Me</Heading>
         <Flex flexDir={'column'} id="about-text">
           <Text mt={'4vh'} color={'purple.300'}>
             Hello there! My name is Michael. I studied Computer Science at{' '}
@@ -187,6 +182,14 @@ const AboutLayout = () => {
           </Flex>
         </Flex>
       </Flex>
+      <Flex className="about-vector">
+          <Image
+            src="/vectors/about.png"
+            alt="tech vector"
+            h={['30vh', '40vh', '50vh', '60vh']}
+            w={['30vh', '40vh', '50vh', '60vh']}
+          />
+        </Flex>
     </Flex>
   );
 };
