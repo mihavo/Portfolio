@@ -3,72 +3,72 @@
         {
             "title": "Ecommerce API",
             "description": "An Ecommerce API for handling the back-end logic of an e-shop. Provides support for user accounts, cart management, product handling, transactions and many more",
-            "github": "https://github.com/Michael-Vol/ecommerce-api"
+            "github": "https://github.com/mihavo/ecommerce-api"
         },
         {
             "title": "Atlacity",
             "description": "A Foursquare inspired full stack web app that lets users explore new places, add ratings, create city guides, connect with other people and many more!",
-            "github": "https://github.com/Michael-Vol/Atlacity",
+            "github": "https://github.com/mihavo/Atlacity",
             "website": "https://atlacity.vercel.app/"
         },
         {
             "title": "WorkNet",
             "description": "A full stack web app, built using the MERN stack, designed to provide a business-oriented social-networking experience",
-            "github": "https://github.com/Michael-Vol/WorkNet",
+            "github": "https://github.com/mihavo/WorkNet",
             "website": "https://michaelvol-worknet.herokuapp.com/"
         },
         {
             "title": "Personal Portfolio",
             "description": "My personal portfolio website built using React and Next.js",
-            "github": "https://github.com/Michael-Vol/Portfolio"
+            "github": "https://github.com/mihavo/Portfolio"
         },
         {
             "title": "DevConnector",
             "description": "A LinkedIn-inspired Web App based on Bard Traversy's MERN Course.",
-            "github": "https://github.com/Michael-Vol/DevConnector"
+            "github": "https://github.com/mihavo/DevConnector"
         },
         {
             "title": "Weather App",
             "description": "A simple weather app that uses the MetaWeather API to display the current weather in a given location",
-            "github": "https://github.com/Michael-Vol/WeatherApp"
+            "github": "https://github.com/mihavo/WeatherApp"
         }
     ],
     "uni": [
         {
             "title": "Inverted Search Engine Optimizer",
             "description": "A Keyword Matching and Deduplication Utility for Inverted Search Engines",
-            "github": "https://github.com/Michael-Vol/Inverted-Search-Engine-Optimizer"
+            "github": "https://github.com/mihavo/Inverted-Search-Engine-Optimizer"
         },
         {
             "title": "Vaccine Monitor",
             "description": "A simple Command Line Tool that implements monitor processes tracking and transferring vacccination data by using POSIX threads and UNIX sockets",
-            "github": "https://github.com/Michael-Vol/VaccineMonitor"
+            "github": "https://github.com/mihavo/VaccineMonitor"
         },
         {
             "title": "Doatap",
             "description": "A better implementation of the doatap.gr website, focusing on refining the user experience and improving the UX",
-            "github": "https://github.com/Michael-Vol/DOATAP",
+            "github": "https://github.com/mihavo/DOATAP",
             "website": "https://doatap-c5e39.web.app"
         },
         {
             "title": "ML-Vaccine-Sentiment-Classifier",
             "description": "A Vaccine Sentiment Classifier with Deep Learning for NLP",
-            "github": "https://github.com/Michael-Vol/ML-Vaccine-Sentiment-Classifier"
+            "github": "https://github.com/mihavo/ML-Vaccine-Sentiment-Classifier"
         },
         {
             "title": "DB-Blocks-Manager",
             "description": "A Database Blocks Manager written in C",
-            "github": "https://github.com/Michael-Vol/DB-Blocks-Manager"
+            "github": "https://github.com/mihavo/DB-Blocks-Manager"
         },
         {
             "title": "MiniJava-LLVM-Generator",
             "description": "A Java utility that transpiles code from MiniJava to LLVM",
-            "github": "https://github.com/Michael-Vol/MiniJava-LLVM-Generator"
+            "github": "https://github.com/mihavo/MiniJava-LLVM-Generator"
         },
         {
             "title": "Browser Emulator",
             "description": "A browser emulator written in C that simulates the functionality of a Web Browser using linked lists",
-            "github": "https://github.com/Michael-Vol/Browser-Emulator"
+            "github": "https://github.com/mihavo/Browser-Emulator"
         }
     ]
 }

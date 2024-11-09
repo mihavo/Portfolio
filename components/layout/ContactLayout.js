@@ -1,11 +1,11 @@
+import { Flex, Heading, Link, Text } from '@chakra-ui/react';
 import React from 'react';
-import { Flex, Text, Heading, Link, Image } from '@chakra-ui/react';
 import {
   BsFacebook,
-  BsTwitter,
-  BsLinkedin,
   BsGithub,
   BsInstagram,
+  BsLinkedin,
+  BsTwitter,
 } from 'react-icons/bs';
 import { MdAlternateEmail } from 'react-icons/md';
 
@@ -57,7 +57,7 @@ const ContactLayout = () => {
           >
             <BsLinkedin {...iconProps} />
           </Link>
-          <Link {...linkProps} href={'https://github.com/Michael-Vol'}>
+          <Link {...linkProps} href={'https://github.com/mihavo'}>
             <BsGithub {...iconProps} />
           </Link>
           <Link {...linkProps} href={'mailto:mivolakis@gmail.com'}>

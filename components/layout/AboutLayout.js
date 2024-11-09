@@ -169,7 +169,7 @@ const AboutLayout = () => {
             flexDir={['column', 'column', 'row']}
             alignItems={'center'}
           >
-            <Link href="https://github.com/Michael-Vol" target={'_blank'}>
+            <Link href="https://github.com/mihavo" target={'_blank'}>
               <Button {...buttonProps} leftIcon={<BsGithub />}>
                 Check my Github Profile
               </Button>
